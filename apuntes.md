@@ -1,3 +1,15 @@
+---
+Comando, en terminal, para iniciar la app
+
+> npm run dev
+
+
+Comando rapido para hacer un objeto
+
+> rafc
+
+---
+
 
 Si la primera letra de una funcion es mayuscula == Es un componente 
 
@@ -87,5 +99,20 @@ const productoEncontrado = productos.find( (unProducto) => unProducto.id === "Gr
 
 
 
+--------
+Hooks de estado
+--------
+
+La idea es que se actualice la pantalla, cuando haga cierta accion asociada a este hook
+
+useState es uno de los hoocks, hay muchos mas
+
+import {useState} from "react"    (Dentro del archivo que se quiere usar, se debe poner esto)
+
+const [ contador, setContador ] = useState(0)     //siempre se pone la variable y al lado set + el nombre de la variable
+
+const aumentarContador = ()=> {
+  setContador(contador + 1)  //cuando se llama al setContador, es cuando se utiliza el hook y se refresca la pantalla
+}
 
 
