@@ -1,8 +1,11 @@
 import "./banner.css"
 
-const Banner= ()=>{
+const Banner = ({urlImage, saludo})=>{
     return(
-        <div>Banner</div>
+        <div className= "banner">
+            <h2>{saludo}</h2>
+            <img src={urlImage} alt="" />
+        </div>
     )
 }
 export default Banner

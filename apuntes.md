@@ -36,8 +36,9 @@ const obj1 = {name : "Gonzalo"}
 const obj2 = {...obj1}
 
 ------------------
+
 > Desestructuracion  (Se usa para obtener datos sin tener que hacer una variable para cada dato)
-------------------
+
 
 const persona = {nombre: "Gonzalo", edad: 26}
 
@@ -50,8 +51,9 @@ const numeros = [1, 2, 3]
 const [primerValor, segundoValor, tercerValor] = numeros
 
 ------------------
+
 > MAP      (sirve para hacer algo con un array, sin modificar el original)
-------------------
+
 
 Ejemplo 1  
 Va a ir recibiendo todos los numeros y por  cada uno, lo multiplica por 2 y lo va guardando
@@ -84,24 +86,27 @@ const productosPrecios = productos.map((unProducto) => unProducto.precio);
 
 
 ------------------
+
 >Filter
-------------------
+
 Crea una nueva lista, agarra la lista de productos del punto anterior y filtra por los precios
 
 const productosFiltrados = productos.filter( (unProducto) => unProducto.precio <= 1500);
 
    
 ------------------
+
 >FIND       (Itera y busca si hay una coincidencia, solo encuentra un elemento)
-------------------
+
 
 const productoEncontrado = productos.find( (unProducto) => unProducto.id === "Grr222");
 
 
 
 --------
+
 Hooks de estado
---------
+
 
 La idea es que se actualice la pantalla, cuando haga cierta accion asociada a este hook
 

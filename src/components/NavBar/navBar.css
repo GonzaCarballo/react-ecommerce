@@ -1,0 +1,15 @@
+.menu {
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: flex-start; /* Alinea los elementos al principio de la fila */
+    gap: 10px; /* Espacio entre los elementos */
+  }
+  
+  .menu h4 {
+    margin: 0; /* Elimina márgenes para evitar espacio extra alrededor del h4 */
+  }
+  
+  .menu img {
+    width: 40px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
