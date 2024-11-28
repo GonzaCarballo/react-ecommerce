@@ -8,6 +8,8 @@ Comando rapido para hacer un objeto
 
 > rafc
 
+
+Link github clases: https://github.com/MartinPerezDev/camada-63395
 ---
 
 
@@ -107,6 +109,7 @@ const productoEncontrado = productos.find( (unProducto) => unProducto.id === "Gr
 
 Hooks de estado
 
+UseState
 
 La idea es que se actualice la pantalla, cuando haga cierta accion asociada a este hook
 
@@ -119,5 +122,51 @@ const [ contador, setContador ] = useState(0)     //siempre se pone la variable 
 const aumentarContador = ()=> {
   setContador(contador + 1)  //cuando se llama al setContador, es cuando se utiliza el hook y se refresca la pantalla
 }
+
+
+--------
+
+Props Children
+
+> Se usa para enviar texto con etiquetas o ya personalizados entre clases. 
+
+Ejemplo:
+<PadreComponente>    //esta es la clase que va a recibir
+  <p> Texto a enviar </p>
+</PadreComponente>
+
+
+const PadreComponente = (props) => {   //recibe
+  return {
+    <div>
+    {props.children}
+    </div>
+  }
+}
+
+
+--------
+
+useEffect
+
+//Se ejecuta solo al montar el componente, una ves sola. no se repite.
+
+
+useEffect (() => { 
+  const fetchApi = () => {
+    fetch ("https://fakestoreapi.com/products")
+      .then((res) => res.json())
+      .then((data) => console.log(data))
+  }
+}, [] )
+
+
+-----------
+
+
+
+
+
+
 
 

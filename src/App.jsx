@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-    <NavBar botonDeMenu= {"inicio"}/>
+    <NavBar botonDeMenu= {"Inicio"}/>
     <NavBar botonDeMenu= {"Productos"}/>
     <NavBar botonDeMenu= {"Sobre nosotros"}/>
     <NavBar botonDeMenu= {"Contacto"}/>
