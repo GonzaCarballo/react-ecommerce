@@ -1,5 +1,7 @@
 import "./navBar.css"
 
+
+
 const NavBar = ({botonDeMenu, urlImage}) => {
   return (
     <div className='menu'>

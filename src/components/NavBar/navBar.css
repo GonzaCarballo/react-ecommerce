@@ -1,7 +1,14 @@
+.navBar {
+  display: flex;  
+  align-items: center;
+  justify-content: center; 
+  width: 100%;
+}
 .menu {
+    display: flex;
     align-items: center; /* Centra los elementos verticalmente */
-    justify-content: flex-start; /* Alinea los elementos al principio de la fila */
-    gap: 10px; /* Espacio entre los elementos */
+    justify-content: center; 
+    width: 100%;
   }
   
   .menu h4 {
@@ -10,6 +17,7 @@
   
   .menu img {
     width: 40px; /* Ajusta el tamaño de la imagen */
-    height: auto; /* Mantiene la proporción de la imagen */
+    height: auto; 
+    justify-content: end;
   }
   
