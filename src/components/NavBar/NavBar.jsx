@@ -6,6 +6,7 @@ const NavBar = ({botonDeMenu, urlImage}) => {
       <h4>{botonDeMenu}</h4>
       <img src={urlImage} alt="" />
     </div>
+    
   )
 }
 

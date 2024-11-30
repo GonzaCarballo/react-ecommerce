@@ -2,6 +2,7 @@ import './App.css'
 import NavBar from './components/NavBar/NavBar'
 import CarritoContador from './components/contadorCarrito/CarritoContador'
 
+
 function App() {
   
   const barraDeMenu = ["Inicio", "Productos", "Sobre nosotros", "Contacto"]
@@ -44,10 +45,7 @@ function App() {
 
     <body className='body'>
         
-    <div>
-      <p>Suma al carrito <button>+</button></p>
-    </div>
-
+    
 
 
 
