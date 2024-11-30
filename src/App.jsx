@@ -23,9 +23,12 @@ function App() {
   return (
     <>
     <div className='navBar'>
-    {pasarElementosNavBar()}
-    <NavBar urlImage={"https://cdn-icons-png.flaticon.com/512/4305/4305700.png"}/>
-
+      <div className='navBarPalabras'>
+        {pasarElementosNavBar()}
+      </div>
+      <div className='navBarImagen'>
+        <NavBar urlImage={"https://cdn-icons-png.flaticon.com/512/4305/4305700.png"}/>
+      </div>
     </div>
     {/*
     {barraDeMenu.map((elementoDeBarraDeMenu)=> {
@@ -34,15 +37,6 @@ function App() {
     */}
 
 
-
-      <Banner 
-        saludo={"Banner1"} 
-        urlImage={"https://locoxelrojo.com/independiente/wp-content/uploads/2024/02/tomas-a-duco-huracan.jpg"}
-      />
-      <Banner 
-        saludo={"Banner2"} 
-        urlImage={"https://adnpositivo.com/wp-content/uploads/2024/04/portada-huracan.jpeg"}
-      />
 
       
 

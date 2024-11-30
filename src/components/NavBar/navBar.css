@@ -1,23 +1,38 @@
-.navBar {
+.navBar{
   display: flex;  
   align-items: center;
   justify-content: center; 
   width: 100%;
+  background-color: rgb(73, 162, 34);
+}
+.navBarPalabras {
+  display: flex;  
+  align-items: center;
+  justify-content: center; 
+  width: 70%;
+  background-color: rgb(230, 58, 58);
 }
 .menu {
     display: flex;
-    align-items: center; /* Centra los elementos verticalmente */
+    align-items: center; 
     justify-content: center; 
-    width: 100%;
+    width: 80%;
   }
   
   .menu h4 {
-    margin: 0; /* Elimina márgenes para evitar espacio extra alrededor del h4 */
+    margin: 0; 
   }
   
-  .menu img {
-    width: 40px; /* Ajusta el tamaño de la imagen */
-    height: auto; 
-    justify-content: end;
+  .navBarImagen {
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    width: 20%;
+    background-color: rgb(97, 104, 234);
   }
+  
+  .navBarImagen img {
+    width: 100%; /* La imagen no será más grande que el contenedor */
+    height: auto; /* Mantiene la proporción */
+  } 
   
