@@ -1,6 +1,6 @@
-import Banner from './components/Banner'
 import './App.css'
 import NavBar from './components/NavBar/NavBar'
+import CarritoContador from './components/contadorCarrito/CarritoContador'
 
 function App() {
   
@@ -8,37 +8,50 @@ function App() {
 
 
   function pasarElementosNavBar(){
-
-  const funcionParametro = (elementro)=>{
-    return <NavBar botonDeMenu={elementro} />
-  }
-
-  let listaDeNav = []
-  listaDeNav =   barraDeMenu.map(funcionParametro);
-  return listaDeNav
+    const funcionParametro = (elementro)=>{
+      return <NavBar botonDeMenu={elementro} />
+    }
+    let listaDeNav = []
+    listaDeNav =   barraDeMenu.map(funcionParametro);
+    return listaDeNav
   }
 
 
 
   return (
     <>
-    <div className='navBar'>
-      <div className='navBarPalabras'>
-        {pasarElementosNavBar()}
+    <header>
+      <div className='navBar'>
+        <div className='navBarPalabras'>
+          {pasarElementosNavBar()}
+        </div>
+        <div className='navBarImagen'>
+          <NavBar urlImage={"https://cdn-icons-png.flaticon.com/512/4305/4305700.png"}/>
+          <CarritoContador />
+        </div>
       </div>
-      <div className='navBarImagen'>
-        <NavBar urlImage={"https://cdn-icons-png.flaticon.com/512/4305/4305700.png"}/>
-      </div>
-    </div>
-    {/*
-    {barraDeMenu.map((elementoDeBarraDeMenu)=> {
-      return <NavBar botonDeMenu={elementoDeBarraDeMenu}/>
-    })}
-    */}
-
-
-
+      {/*
+      {barraDeMenu.map((elementoDeBarraDeMenu)=> {
+        return <NavBar botonDeMenu={elementoDeBarraDeMenu}/>
+      })}
+      */}
       
+      
+
+
+    </header>
+
+
+    <body className='body'>
+        
+    <div>
+      <p>Suma al carrito <button>+</button></p>
+    </div>
+
+
+
+
+    </body>
 
 
     
