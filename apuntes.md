@@ -164,6 +164,42 @@ useEffect (() => {
 -----------
 
 
+Sincronico = Si hay dos acciones y se ejecuta una, tiene que esperara a que termina para ejecutar la segunda
+Asincronica = Se pueden ejecutar al mismo tiempo 
+
+Promesas = 
+Hay que declarar la promesa =    const promesa = new promise (resolve, reject) => { //aca va la funcion con la promesa}
+
+La promesa puede ser RESOLVE o REJECT 
+En caso que se sea resolve, se va a ejecutar el .then
+En caso que no se resuelva, se ejecuta .catch
+El .finally se ejecuta si o si 
+
+El setTimeout()     == sirve para simular un retraso de la red, para simular una sincronia.
+
+
+----------------
+
+Renderizar lista de arrays
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
